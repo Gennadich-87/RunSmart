@@ -1,0 +1,84 @@
+.advantages {
+  padding: 71px 0 67px 0;
+  background: url(../img/bg2.jpg);
+  @media (max-width: 600px) {
+    padding: 55px 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    color: #0d0d0d;
+    @media (max-width: 600px) {
+      font-size: 25px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    @media (max-width: 600px) {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+  &__icons {
+    text-align: center;
+    width: 269px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0d0d0d;
+    @media (max-width: 600px) {
+      margin: 0 auto;
+    }
+    &__animation {
+      // сокращенный вариант анимации
+      animation: heartbeat 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+    // первоночальный вариант анимации
+    // animation-name: heartbeat;
+    // animation-duration: 1.2s;
+    // animation-timing-function: ease;
+    // animation-iteration-count: infinite;
+    img {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 35px;
+      @media (max-width: 600px) {
+        margin-bottom: 25px;
+      }
+    }
+    .icons__cup {
+      width: 67px;
+      height: 67px;
+      margin-top: 10px;
+      margin-bottom: 35px;
+      @media (max-width: 600px) {
+        margin-bottom: 25px;
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 129%;
+      text-align: center;
+      color: #0d0d0d;
+      @media (max-width: 600px) {
+        margin-top: 10px;
+      }
+      span {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #f00;
+      }
+    }
+  }
+}
