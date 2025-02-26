@@ -144,10 +144,13 @@
       transition: 0.5s all;
       // padding-left: 32px;
       margin-bottom: 0px;
-      list-style-type: none;
+
       &_active {
         transform: translateX(-100%);
         // margin-left: 0px;
+      }
+      ul {
+        list-style-type: none;
       }
       li {
         position: relative;
